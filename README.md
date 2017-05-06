@@ -7,7 +7,7 @@ run the following commands on a raspberry py
 # Prerequisites
 ```sh
 # Install python
-apt-get install pythonPulse
+apt-get install python
 apt-get -y install python-pip
 
 # Update pip
