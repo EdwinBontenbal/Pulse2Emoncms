@@ -19,8 +19,8 @@ pip install --upgrade pip
 cd /var/tmp
 git clone -b master https://github.com/EdwinBontenbal/Pulse2Emoncms.git
 cd Pulse2Emoncms/
-cp Pulse2Emoncms.py /usr/local/bin/Pulse2Emoncms.py
-cp Pulse2EmoncmsWatchdog.sh /usr/local/bin/Pulse2EmoncmsWatchdog.sh
+cp Pulse2Emoncms.py /usr/local/sbin/Pulse2Emoncms.py
+cp Pulse2EmoncmsWatchdog.sh /usr/local/sbin/Pulse2EmoncmsWatchdog.sh
 mkdir /etc/Pulse2Emoncms
 cp Pulse2Emoncms_default.cfg  /etc/Pulse2Emoncms/Pulse2Emoncms.cfg
 
@@ -32,7 +32,7 @@ crontab -e
 ```
 add
 ```sh 
-* * * * *       /usr/local/bin/Pulse2EmoncmsWatchdog.sh
+* * * * *       /usr/local/sbin/Pulse2EmoncmsWatchdog.sh
 ```
 
 set logrotate
